@@ -1,0 +1,410 @@
+* {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+
+a {
+    text-decoration: none;
+    color: #6060EC;
+}
+
+.clear:after {
+    clear: both;
+}
+
+
+/* /////////////////////////////// HEADER /////////////////////////// 
+(65, 70, 167, 0.87) */
+
+
+header {
+    background-color: rgba(138, 106, 38, 0.98);
+    color: #F0F0F0;
+    padding: 13px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.29);
+    position: fixed;
+    width: 100vw;
+    z-index: 40;
+    opacity: 0.95;
+    min-width: 1020px;
+}
+
+header a {
+    color: #F0F0F0;
+    text-decoration: none;
+}
+
+header .logo-area {
+    color: #F0F0F0;
+    display: inline-block;
+    width: 15%;
+}
+
+header .logo-area a {
+    color: #F0F0F0;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+header .menu {
+    display: inline-block;
+    width: 19%;
+    text-align: center;
+    word-spacing: 20px;
+    
+}
+
+header .menu ul li {
+    display: inline-block;
+}
+
+header .icon-links {
+    display: inline-block;
+    width: 21%
+}
+
+header .icon-links ul li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+header .icon-links .quick-options {
+    display: inline-block;
+    border-left: 1px solid rgba(255, 255, 255, 0.35);
+    border-right: 1px solid rgba(255, 255, 255, 0.35);
+    padding: 0px 20px;
+}
+
+header .icon-links .privacy {
+    display: inline-block;
+    margin-left: 25px;
+}
+
+header .icon-links .privacy .privacy-caret {
+    font-size: 80%;
+}
+
+header .search-area {
+    display: inline-block;
+    width: 41%;
+    text-align: right;
+    margin-right: 3px;
+}
+
+header .search-area ul li {
+    display: inline-block;
+}
+
+header .search-area input {
+    border: none;
+    background-color: rgba(138, 106, 38, 0.98);
+    color: white;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.66)
+}
+
+header .search-area input:focus {
+    outline: none;
+}
+
+
+header .search-area input::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+    color:   rgba(255, 255, 255, 0.53);
+}
+header .search-area input:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    color:   rgba(255, 255, 255, 0.53);
+   opacity:  1;
+}
+header .search-area input::-moz-placeholder { /* Mozilla Firefox 19+ */
+    color:   rgba(255, 255, 255, 0.53);
+   opacity:  1;
+}
+header .search-area input:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color:   rgba(255, 255, 255, 0.53);
+}
+header .search-area input::-ms-input-placeholder { /* Microsoft Edge */
+    color:   rgba(255, 255, 255, 0.53);
+}
+
+
+/* //////////////////// TOP AREA ////////////////////////////////// */
+
+#top-area {
+    background: url("http://images4.fanpop.com/image/photos/23400000/Sunset-beautiful-nature-23473655-900-595.jpg") no-repeat center center ;
+    background-size: cover;
+    
+    
+}
+
+#top-area .profile-info {
+    padding: 200px 10px 70px 70px;
+}
+
+#top-area .user-img {
+    display: inline-block;
+}
+
+#top-area .profile-info .user-img img {
+    width: 125px;
+    height: 125px;
+    border-radius: 50%;
+    vertical-align: middle;
+    -o-object-fit: cover;
+    object-fit: cover;
+    -webkit-box-shadow: 0 0 15px 1px white;
+    box-shadow: 0 0 15px 1px white;
+}
+
+#top-area .user-details {
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 12px;
+    margin-top: -10px;
+}
+
+#top-area h3 {
+    font-size: 28px;
+    margin-bottom: 8px;
+    text-transform: uppercase;
+    color: white;
+}
+
+#top-area .user-details a {
+    text-transform: uppercase;
+    font-size: 12px;
+    color: white;
+    background-color: rgba(192, 192, 192, 0.32);
+    padding: 7px;
+    margin-right: 5px;
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.63);
+    border-radius: 4px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+#top-area .user-details a:hover {
+    /* -webkit-box-shadow: 0 0 3px white; */
+    /* box-shadow: 0 0 3px white; */
+    background-color: rgba(206, 159, 65, 0.56);
+}
+
+
+/* ////////////////////////////////////////////////// CONTENT AREA ///////*/
+
+#content-area {
+    background-color: #FAFAFA;
+    color: #464646;
+    overflow: auto;
+    padding: 50px 0;
+    position: relative;
+}
+
+#content-area .widget-box h6 {
+    margin-bottom: 10px;
+    display: inline-block;
+}
+
+#content-area .side-column .widget-box p {
+    font-size: 95%;
+    color: #999595;
+    margin-bottom: 10px;
+    line-height: 1.2;
+}
+
+#content-area .side-column {
+    float: left;
+    width: 35%;
+    margin: 0 2.5%;
+    /* min-width: 300px; */
+    max-width: 380px;
+}
+
+
+
+#content-area .widget-box {
+    background: white;
+    -webkit-box-shadow: 0px 2px 5px -1px #4B4B4B;
+    box-shadow: 0px 2px 5px -1px #4B4B4B;
+    padding: 15px;
+    margin: 0 0 15px 0;
+    overflow: auto;
+    border-radius: 3px;
+}
+
+#content-area .widget-box .head .widget-img {
+    display: inline-block;
+    background: #DFDADA;
+    padding: 8px;
+    color: white;
+    border-radius: 50%;
+    margin: 10px 7px 7px 10px;
+}
+
+#content-area .widget-box .head .widget-title {
+    display: inline-block;
+}
+
+#content-area .intro .body {
+    padding: 10px 10px 15px 12px;
+}
+
+
+#content-area .side-column .photos .body,
+#content-area .side-column .friends .body {
+    padding: 5px 0 0 0;
+}
+
+#content-area .side-column .photos .body div,
+#content-area .side-column .friends .body div {
+    width: 33.33%;
+    height: 110px;
+    border: 2px solid white;
+    float: left;
+}
+
+/* ///////////////////////////////////////////////
+MAIN AREA 
+//////////////////////////////////////////// */
+
+#content-area .main-area {
+    float: left;
+    width: 55%;
+    margin: 0 2.5%;
+   
+}
+
+#content-area .main-area .widget-box {
+    padding: 0;
+    margin: 10;
+    
+}
+
+
+#content-area .main-area .submenu ul {
+    padding: 0;
+    margin: 0;
+}
+
+#content-area .main-area .submenu ul li  {
+    display: inline-block;
+    width: 20%;
+    padding: 15px 10px 10px 10px;
+    text-align: center;
+    text-transform: uppercase;
+    cursor: pointer;
+    
+    transition: all 0.3s ease;
+    border-bottom: 3px solid #fff;
+}
+
+#content-area .main-area .submenu ul li p  {
+    font-size: 14px;
+}
+
+
+#content-area .main-area .submenu ul li:not(:last-child):hover { 
+        color: rgba(179, 138, 58, 0.77);
+        border-bottom: 3px solid rgba(179, 138, 58, 0.77);
+}
+
+#content-area .main-area .submenu ul li:last-child:hover { 
+    color: rgba(179, 138, 58, 0.77);
+}
+
+#content-area .main-area .submenu ul li:last-child{
+    transform: rotate(90deg);
+    position: relative;
+    text-align: center;
+    width: 50px;
+    float: right;
+    top: 5px;
+}
+
+#content-area .main-area .submenu i {
+    padding-bottom: 5px;    
+}
+
+/* ------------ POST AREA -------*/
+
+
+
+#content-area .main-area .widget-box.post .post-profile-info {
+    display: inline-block;
+    width: 100%;
+    padding: 15px;
+
+}
+
+#content-area .main-area .widget-box.post .post-profile-info img  {
+    width: 50px;
+    border-radius: 50%;
+    float: left;
+    margin-right: 10px;
+}
+
+#content-area .main-area .widget-box.post .post-image {
+    background: url("https://images.unsplash.com/photo-1505209199080-f65dc1053ebb?auto=format&fit=crop&w=622&q=60&ixid=dW5zcGxhc2guY29tOzs7Ozs%3D") no-repeat center;
+    background-size: cover;
+    height: 500px;
+    width: auto;
+}    
+
+#content-area .main-area .widget-box.post .post-likes ul li {
+    padding: 15px;
+    display: inline-block;
+    color: grey;
+    
+}
+
+#content-area .main-area .widget-box.post .post-likes ul li:last-child {
+    float: right;
+}
+
+#content-area .main-area .widget-box.post .post-comment {
+    background: #F3EFEF;
+    padding: 15px;
+    display: inline-block;
+}
+
+#content-area .main-area .widget-box.post .post-comment .name {
+    display: inline-block;
+}
+
+#content-area .main-area .widget-box.post .post-comment .time {
+    float: right;
+}
+
+#content-area .main-area .widget-box.post .post-comment .comment {
+    color: grey;
+    margin: 10px 30px 10px 60px;
+
+}
+  
+#content-area .main-area .widget-box.post .post-comment-write div {
+    padding-top: 15px;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.5);
+    margin-left: 60px;
+    
+}
+
+#content-area .main-area .widget-box.post .post-comment-write input {
+    width: 78%;
+    border: none; 
+    height: 25px;
+    overflow-wrap: hard;    
+    
+}
+
+#content-area .main-area .widget-box.post .post-comment-write input:focus {
+    outline: none;
+    
+}
+
+#content-area .main-area .widget-box.post .post-comment-write i {
+    margin-right: 2%;
+    color: grey;
+    float: right;
+}
+
